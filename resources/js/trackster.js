@@ -1,3 +1,11 @@
+$('document').ready(function() {
+    
+   $('#searchbutton').click(function() {
+       Trackster.searchTracksByTitle($('.searchbar').val());
+   });
+    
+});
+
 var Trackster = {};
 
 /*

@@ -1,3 +1,14 @@
 /*
   Custom styles for Trackster App
 */
+
+header {
+    height: 7rem;
+    background-color: rgb(35, 2, 63);
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    height: 100%;
+}
