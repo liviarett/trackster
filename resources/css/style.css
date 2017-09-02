@@ -2,6 +2,11 @@
   UNIVERSAL STYLES
 */
 
+@keyframes title {
+    from {left: 0;}
+    to {left: 10%;}
+}
+
 .html {
     font-size: 16px;
 }
@@ -16,6 +21,9 @@ header .container-fluid {
     background-color: rgb(35, 2, 63); 
 }
 
+*:focus {
+    outline: none;
+}
 
 /*div {
     border: 1px solid grey;
@@ -36,6 +44,12 @@ header .row {
     font-family: Righteous;
     font-size: 3.5rem;
     margin: auto 0;
+    position: relative;
+    animation-name: '';
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
 }
 
 .search {
