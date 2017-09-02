@@ -1,14 +1,129 @@
 /*
-  Custom styles for Trackster App
+  UNIVERSAL STYLES
 */
 
-header {
-    height: 7rem;
-    background-color: rgb(35, 2, 63);
-    padding: 0;
-    margin: 0;
+.html {
+    font-size: 16px;
 }
 
-.nav {
+a:link, a:hover, a:visited, a:active{
+    text-decoration: none;
+    color: inherit;
+}
+
+header .container-fluid {
+    height: 13rem;
+    background-color: rgb(35, 2, 63); 
+}
+
+
+/*div {
+    border: 1px solid grey;
+}*/
+
+/*
+  HEADER
+*/
+
+header .row {
     height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    color: rgb(255, 0, 171);
+    font-family: Righteous;
+    font-size: 3.5rem;
+    margin: auto 0;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.search-bar {
+    background-color: white;
+    color: rgb(74, 74, 74);
+    height: 3rem;
+    border-radius: 20px;
+    padding-left: 1.2rem;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    rgb(171, 171, 171);
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    rgb(171, 171, 171);
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    rgb(171, 171, 171);
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    rgb(171, 171, 171);
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    rgb(171, 171, 171);
+}
+
+#searchbutton {
+    background-color: rgb(255, 102, 204);
+    height: 3.3rem;
+    width: 30%;
+    min-width: 3.5rem;
+    border-radius: 20px;
+    color: rgb(35, 2, 63);
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#searchbutton:hover {
+    background-color: rgb(255, 0, 171);
+}
+
+/*
+  SEARCH RESULTS
+*/
+
+.result-header {
+    background-color: rgb(104, 0, 255);
+    color: white;
+    padding: 0.5% 0;
+}
+
+.rank {
+    text-align: right;
+}
+
+.play, rank{
+    text-align: center;
+    color: rgb(255, 0, 171);
+    font-size: 3.5rem;
+}
+
+.play a:hover {
+    color: rgb(255, 102, 204);
+}
+
+.result {
+    display: flex;
+    align-items: center;
+    height: 9rem;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+.result:hover {
+    background-color: rgb(239, 237, 242);
+}
+
+.album img {
+    height: 7rem;
+    width: 7rem;
 }
